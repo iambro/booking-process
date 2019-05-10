@@ -49,17 +49,41 @@ li {
     .header-logo img {
       width: 12.3rem;
       height: 2.2rem; }
-  .header-menu span:after {
-    content: "\203a";
-    font-weight: 100;
-    display: inline-block;
-    -webkit-transform: rotate(90deg) scale(3);
-    -ms-transform: rotate(90deg) scale(3);
-    transform: rotate(90deg) scale(3); }
-  .header-menu span:hover:after {
-    -webkit-transform: rotate(270deg) scale(3);
-    -ms-transform: rotate(270deg) scale(3);
-    transform: rotate(270deg) scale(3); }
+  .header-menu {
+    display: block;
+    padding: 0 2px; }
+    .header-menu-dropdown {
+      display: none; }
+    .header-menu span:after {
+      background: none;
+      content: "\203a";
+      display: inline-block;
+      font-weight: 300;
+      margin: auto 0;
+      -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      direction: ltr;
+      -webkit-transform: rotateZ(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotateZ(90deg);
+      font-size: 3.9rem;
+      height: 1.9rem;
+      line-height: 1rem;
+      width: 1.1rem;
+      right: 1rem;
+      bottom: 0;
+      top: 0;
+      position: relative;
+      right: -10px;
+      top: 6px; }
+    .header-menu span:hover:after {
+      -webkit-transform: rotateZ(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotateZ(270deg); }
   .header-language-button {
     text-decoration: none;
     color: #ff4800; }

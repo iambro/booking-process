@@ -1,7 +1,26 @@
 import React, { Component } from "react";
 
+const openStyle = {
+  display: "block"
+};
+
+const closeStyle = {
+  display: "none"
+};
+
 class Header extends Component {
-  state = {};
+  state = {
+    isOpen: false
+  };
+
+  handleHoverOn = () => {
+    this.setState({ isOpen: true });
+  };
+
+  handleHoverOff = () => {
+    this.setState({ isOpen: false });
+  };
+
   render() {
     return (
       <div className="header">
@@ -16,9 +35,16 @@ class Header extends Component {
             </a>
           </h1>
           <ul className="header-menu">
-            <li className="header-menu-item">
+            <li
+              className="header-menu-item"
+              onMouseEnter={this.handleHoverOn}
+              onMouseLeave={this.handleHoverOff}
+            >
               <span className="header-menu-item-languages">PL</span>
-              <ul className="header-menu-dropdown">
+              <ul
+                className="header-menu-dropdown"
+                style={this.state.isOpen ? openStyle : closeStyle}
+              >
                 <li className="header-menu-dropdown-item header-language-de">
                   <a
                     className="header-language-button header-language-button-de"
