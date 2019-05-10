@@ -90,7 +90,41 @@ li {
     .header-language-button:hover {
       color: #ff7e00; }
 
+.steps {
+  margin: 0.8rem 0.8rem 2rem 0.8rem;
+  font-size: 1.5rem;
+  line-height: 3.1rem;
+  color: #ffffff; }
+  .steps ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .steps ol li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 2rem; }
+      .steps ol li span {
+        font-size: 2rem;
+        width: 2.5rem;
+        line-height: 2.5rem;
+        border: 3px solid #4a575f;
+        border-radius: 100%;
+        text-align: center;
+        margin-right: 1rem;
+        color: #4a575f; }
+
+.content {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: #3f454d; }
+
 body {
   font-family: "Open sans", sans-serif;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: 300; }

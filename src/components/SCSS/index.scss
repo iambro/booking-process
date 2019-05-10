@@ -1,8 +1,10 @@
 @import "variables";
 @import "reset";
 @import "Header";
+@import "Content";
 
 body {
-    font-family: "Open sans", sans-serif;
-    box-sizing: border-box;
-  }
+  font-family: "Open sans", sans-serif;
+  box-sizing: border-box;
+  font-weight: 300;
+}
