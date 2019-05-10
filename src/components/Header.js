@@ -40,7 +40,7 @@ class Header extends Component {
               onMouseEnter={this.handleHoverOn}
               onMouseLeave={this.handleHoverOff}
             >
-              <span className="header-menu-item-languages">PL</span>
+              <span className="header-menu-item-languages">EN</span>
               <ul
                 className="header-menu-dropdown"
                 style={this.state.isOpen ? openStyle : closeStyle}
