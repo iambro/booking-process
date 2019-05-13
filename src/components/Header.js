@@ -13,12 +13,8 @@ class Header extends Component {
     isOpen: false
   };
 
-  handleHoverOn = () => {
-    this.setState({ isOpen: true });
-  };
-
-  handleHoverOff = () => {
-    this.setState({ isOpen: false });
+  handleHover = () => {
+    this.setState({ isOpen: !this.state.isOpen });
   };
 
   render() {
@@ -37,8 +33,8 @@ class Header extends Component {
           <ul className="header-menu">
             <li
               className="header-menu-item"
-              onMouseEnter={this.handleHoverOn}
-              onMouseLeave={this.handleHoverOff}
+              onMouseEnter={this.handleHover}
+              onMouseLeave={this.handleHover}
             >
               <span className="header-menu-item-languages">EN</span>
               <ul
