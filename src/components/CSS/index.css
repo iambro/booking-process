@@ -117,6 +117,10 @@ li {
         margin-right: 1rem;
         color: #4a575f; }
 
+.summary {
+  background-color: #1e2731;
+  color: #ffffff; }
+
 .content {
   max-width: 100rem;
   margin: 0 auto;
