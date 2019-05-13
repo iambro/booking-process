@@ -2,11 +2,12 @@ import React from "react";
 
 const Summary = () => {
   return (
-      <div className="summary">
+    <div className="summary">
+      <div className="summary-info">
         <h1 className="summary-header">Your booking</h1>
         <table className="summary-details">
           <tbody>
-          <tr>
+            <tr>
               <th>From</th>
               <td>Hilton Gdansk, Targ Rybny 1, 80-838 Gdańsk, Poland</td>
             </tr>
@@ -49,6 +50,8 @@ const Summary = () => {
           </tbody>
         </table>
       </div>
+      <div className="summary-map" />
+    </div>
   );
 };
 
