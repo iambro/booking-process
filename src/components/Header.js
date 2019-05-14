@@ -47,7 +47,7 @@ class Header extends Component {
               onMouseLeave={this.handleHoverOff}
             >
               <span className="header-menu-item-languages">
-                {this.props.language}
+                {this.props.language.toUpperCase()}
               </span>
               <ul
                 className="header-menu-dropdown"
