@@ -5,21 +5,22 @@ const currentStyle = {
   color: "#ffffff"
 };
 
-const Steps = () => {
+const Steps = props => {
+  const { steps } = props;
   return (
     <div className="steps">
       <ol className="steps-list">
         <li className="steps-list-element current">
           <span style={currentStyle}>1</span>
-          <p>Where & When</p>
+          <p>{steps.stepOne}</p>
         </li>
         <li className="steps-list-element">
           <span>2</span>
-          <p>Choose a Car</p>
+          <p>{steps.stepTwo}</p>
         </li>
         <li className="steps-list-element">
           <span>3</span>
-          <p>Details & Payment</p>
+          <p>{steps.stepThree}</p>
         </li>
       </ol>
     </div>

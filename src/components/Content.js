@@ -9,9 +9,9 @@ class Content extends Component {
       from: "",
       to: "",
       date: "",
-      pickupTime: "",
+      pickup: "",
       distance: "",
-      estimatedDuration: "",
+      duration: "",
       passengers: "",
       childrenSeats: "",
       luggage: "",
@@ -44,11 +44,12 @@ class Content extends Component {
     //   animals,
     //   voucherCode
     // } = this.state.form;
+    const { steps, content, summary, alerts } = this.props;
     return (
       <div className="content">
-        <Steps />
-        <ContentBox handleInputs={this.handleInputs} />
-        <Summary form={this.state.form} />
+        <Steps steps={steps} />
+        <ContentBox handleInputs={this.handleInputs} content={content} />
+        <Summary form={this.state.form} summary={summary} />
       </div>
     );
   }

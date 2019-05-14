@@ -1,8 +1,44 @@
-{"translations": {
+{
+  "translations": {
     "en": {
-        "steps": ["Where & When", "Choose a Car", "Details & Payment"],
-        "form": ["Pick up", "Destination", "Today", "Tomorrow", "At", "Voucher code (optional)", "For", "passenger with", "passenegers with", "bag", "bags", "hide options", "Per-hour booking for", "till", "Start booking"],
-        "summary": ["Your booking", "From", "To", "Date", "Pickup Time", "Distance", "Duration", "Passengers", "Children seats", "Luggage", "Sport luggage", "Animals"],
-        "alerts": []
+      "steps": {
+        "stepOne": "Where & When",
+        "stepTwo": "Choose a Car",
+        "stepThree": "Details & Payment"
+      },
+      "content": {
+        "pickup": "Pick up",
+        "destination": "Destination",
+        "today": "Today",
+        "tomorrow": "Tomorrow",
+        "at": "At",
+        "voucher": "Voucher code (optional)",
+        "for": "For",
+        "passenger": "passenger with",
+        "passengers": "passenegers with",
+        "bag": "bag",
+        "bags": "bags",
+        "hide": "hide options",
+        "perHour": "Per-hour booking for",
+        "till": "till",
+        "startBooking": "Start booking"
+      },
+      "summary": {
+        "your": "Your booking",
+        "from": "From",
+        "to": "To",
+        "date": "Date",
+        "pickup": "Pickup Time",
+        "distance": "Distance",
+        "duration": "Duration",
+        "passengers": "Passengers",
+        "childrenSeats": "Children seats",
+        "luggage": "Luggage",
+        "sportLuggage": "Sport luggage",
+        "animals": "Animals",
+        "voucherCode": "Voucher Code"
+      },
+      "alerts": []
     }
-}}
+  }
+}
