@@ -1,0 +1,117 @@
+.content-box {
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: $gray-labels;
+  .form {
+    width: 50rem;
+    &-group {
+      margin-bottom: 0.2rem;
+      display: flex;
+    }
+    &-title {
+      background-color: $white;
+      height: 4.8rem;
+      padding: 1rem 0.2rem 1.2rem 1.2rem;
+      box-sizing: border-box;
+    }
+    &-input {
+      font-size: 1.9rem;
+      height: 4.8rem;
+      background-color: $white;
+      padding: 1.1rem 1.2rem 1.1rem 0.4rem;
+      border: none;
+      box-sizing: border-box;
+      flex: 1;
+      &__time {
+        box-sizing: border-box;
+        border: none;
+        padding: 1.1rem 1.2rem 1.1rem 0.4rem;
+        width: 11.7rem;
+      }
+    }
+
+    &-arrow {
+      background-color: $white;
+      height: 4.8rem;
+      padding: 1rem 1rem 1rem 1rem;
+      width: 4.8rem;
+      border-left: 2px solid #a8a8a852;
+      display: block;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+
+    &-arrow:after {
+      color: $orange;
+      content: "\203a";
+      display: inline-block;
+      font-weight: 300;
+      margin: auto 0;
+      transform-origin: center center;
+      transition: all 0.35s ease-in-out;
+      direction: ltr;
+      transform: rotateZ(90deg);
+      font-size: 6rem;
+      height: 1.8rem;
+      line-height: 0.8rem;
+      width: 1.1rem;
+      right: 1rem;
+      bottom: 0;
+      top: 0;
+      position: relative;
+      right: -11px;
+      top: 7px;
+    }
+
+    &-arrow:hover:after {
+      transform: rotateZ(270deg);
+    }
+
+    .date-box {
+      margin: 0 0.2rem 0.2rem 0;
+    }
+
+    .date {
+      cursor: pointer;
+      color: $gray-dark;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    &-date {
+      display: flex;
+      &__numeric {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        cursor: pointer;
+        color: $gray-dark;
+        font-weight: bold;
+        width: 8.9rem;
+        margin: 0.6rem 0 0 1rem;
+      }
+      &__human {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        cursor: pointer;
+        color: $gray-dark;
+        width: 8.9rem;
+        margin-left: 1rem;
+      }
+    }
+    &-datepicker {
+      &-button {
+        height: 4.8rem;
+        width: 4.8rem;
+        background-color: $white;
+        border: none;
+        border-left: 2px solid #a8a8a852;
+        padding: 1.2rem;
+      }
+    }
+
+    .time-box {
+      flex: 2
+    }
+  }
+}

@@ -122,6 +122,285 @@ li {
   background-color: #1e2731;
   color: #ffffff; }
 
+.content-box {
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: #a8a8a8; }
+  .content-box .form {
+    width: 50rem; }
+    .content-box .form-group {
+      margin-bottom: 0.2rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .content-box .form-title {
+      background-color: #ffffff;
+      height: 4.8rem;
+      padding: 1rem 0.2rem 1.2rem 1.2rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .content-box .form-input {
+      font-size: 1.9rem;
+      height: 4.8rem;
+      background-color: #ffffff;
+      padding: 1.1rem 1.2rem 1.1rem 0.4rem;
+      border: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .content-box .form-input__time {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        padding: 1.1rem 1.2rem 1.1rem 0.4rem;
+        width: 11.7rem; }
+    .content-box .form-arrow {
+      background-color: #ffffff;
+      height: 4.8rem;
+      padding: 1rem 1rem 1rem 1rem;
+      width: 4.8rem;
+      border-left: 2px solid #a8a8a852;
+      display: block;
+      cursor: pointer;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .content-box .form-arrow:after {
+      color: #ff4800;
+      content: "\203a";
+      display: inline-block;
+      font-weight: 300;
+      margin: auto 0;
+      -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      direction: ltr;
+      -webkit-transform: rotateZ(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotateZ(90deg);
+      font-size: 6rem;
+      height: 1.8rem;
+      line-height: 0.8rem;
+      width: 1.1rem;
+      right: 1rem;
+      bottom: 0;
+      top: 0;
+      position: relative;
+      right: -11px;
+      top: 7px; }
+    .content-box .form-arrow:hover:after {
+      -webkit-transform: rotateZ(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotateZ(270deg); }
+    .content-box .form .date-box {
+      margin: 0 0.2rem 0.2rem 0; }
+    .content-box .form .date {
+      cursor: pointer;
+      color: #1e2731;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0; }
+    .content-box .form-date {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .content-box .form-date__numeric {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        cursor: pointer;
+        color: #1e2731;
+        font-weight: bold;
+        width: 8.9rem;
+        margin: 0.6rem 0 0 1rem; }
+      .content-box .form-date__human {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        cursor: pointer;
+        color: #1e2731;
+        width: 8.9rem;
+        margin-left: 1rem; }
+    .content-box .form-datepicker-button {
+      height: 4.8rem;
+      width: 4.8rem;
+      background-color: #ffffff;
+      border: none;
+      border-left: 2px solid #a8a8a852;
+      padding: 1.2rem; }
+    .content-box .form .time-box {
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2; }
+
+.content {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: #3f454d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.steps {
+  margin: 0.8rem 0.8rem 2rem 0.8rem;
+  font-size: 1.5rem;
+  line-height: 3.1rem;
+  color: #ffffff;
+  width: 100%; }
+  .steps ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .steps ol li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 2rem; }
+      .steps ol li span {
+        font-size: 2rem;
+        width: 2.5rem;
+        line-height: 2.5rem;
+        border: 3px solid #4a575f;
+        border-radius: 100%;
+        text-align: center;
+        margin-right: 1rem;
+        color: #4a575f; }
+
+.summary {
+  background-color: #1e2731;
+  color: #ffffff; }
+
+.content-box {
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  color: #a8a8a8; }
+  .content-box .form {
+    width: 50rem; }
+    .content-box .form-group {
+      margin-bottom: 0.2rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .content-box .form-title {
+      background-color: #ffffff;
+      height: 4.8rem;
+      padding: 1rem 0.2rem 1.2rem 1.2rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .content-box .form-input {
+      font-size: 1.9rem;
+      height: 4.8rem;
+      background-color: #ffffff;
+      padding: 1.1rem 1.2rem 1.1rem 0.4rem;
+      border: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .content-box .form-input__time {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        padding: 1.1rem 1.2rem 1.1rem 0.4rem;
+        width: 11.7rem; }
+    .content-box .form-arrow {
+      background-color: #ffffff;
+      height: 4.8rem;
+      padding: 1rem 1rem 1rem 1rem;
+      width: 4.8rem;
+      border-left: 2px solid #a8a8a852;
+      display: block;
+      cursor: pointer;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+    .content-box .form-arrow:after {
+      color: #ff4800;
+      content: "\203a";
+      display: inline-block;
+      font-weight: 300;
+      margin: auto 0;
+      -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+      transition: all 0.35s ease-in-out;
+      direction: ltr;
+      -webkit-transform: rotateZ(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotateZ(90deg);
+      font-size: 6rem;
+      height: 1.8rem;
+      line-height: 0.8rem;
+      width: 1.1rem;
+      right: 1rem;
+      bottom: 0;
+      top: 0;
+      position: relative;
+      right: -11px;
+      top: 7px; }
+    .content-box .form-arrow:hover:after {
+      -webkit-transform: rotateZ(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotateZ(270deg); }
+    .content-box .form .date-box {
+      margin: 0 0.2rem 0.2rem 0; }
+    .content-box .form .date {
+      cursor: pointer;
+      color: #1e2731;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding: 0; }
+    .content-box .form-date {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .content-box .form-date__numeric {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        cursor: pointer;
+        color: #1e2731;
+        font-weight: bold;
+        width: 8.9rem;
+        margin: 0.6rem 0 0 1rem; }
+      .content-box .form-date__human {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        cursor: pointer;
+        color: #1e2731;
+        width: 8.9rem;
+        margin-left: 1rem; }
+    .content-box .form-datepicker-button {
+      height: 4.8rem;
+      width: 4.8rem;
+      background-color: #ffffff;
+      border: none;
+      border-left: 2px solid #a8a8a852;
+      padding: 1.2rem; }
+    .content-box .form .time-box {
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2; }
+
 .content {
   max-width: 100rem;
   margin: 0 auto;
@@ -134,7 +413,7 @@ li {
   flex-wrap: wrap; }
 
 body {
-  font-family: "Open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 300;

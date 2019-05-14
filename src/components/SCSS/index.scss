@@ -1,10 +1,12 @@
 @import "variables";
+@import "mixins";
 @import "reset";
 @import "Header";
 @import "Content";
+@import "Content";
 
 body {
-  font-family: "Open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   font-weight: 300;
   background-color: $background;
