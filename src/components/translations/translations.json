@@ -1,0 +1,8 @@
+{"translations": {
+    "en": {
+        "steps": ["Where & When", "Choose a Car", "Details & Payment"],
+        "form": ["Pick up", "Destination", "Today", "Tomorrow", "At", "Voucher code (optional)", "For", "passenger with", "passenegers with", "bag", "bags", "hide options", "Per-hour booking for", "till", "Start booking"],
+        "summary": ["Your booking", "From", "To", "Date", "Pickup Time", "Distance", "Duration", "Passengers", "Children seats", "Luggage", "Sport luggage", "Animals"],
+        "alerts": []
+    }
+}}
