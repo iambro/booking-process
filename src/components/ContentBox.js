@@ -1,8 +1,35 @@
 import React, { Component } from "react";
 
+const openStyle = { display: "block" };
+const closeStyle = { display: "none" };
+
 class ContentBox extends Component {
-  state = {};
+  state = {
+    calendarIsOpen: false,
+    todayDate: []
+  };
+
+  handleCalendarOpen = () => {
+    this.setState({
+      calendarIsOpen: !this.state.calendarIsOpen
+    });
+  };
+
+  componentDidMount() {
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, "0");
+    let mm = String(today.getMonth() + 1).padStart(2, "0");
+    let yyyy = today.getFullYear();
+    let hh = String(today.getHours()).padStart(2, "0");
+    let min = String(today.getMinutes()).padStart(2, "0");
+
+    this.setState({
+      todayDate: [dd, mm, yyyy, hh, min]
+    });
+  }
+
   render() {
+    const { todayDate, calendarIsOpen } = this.state;
     return (
       <div className="content-box">
         <form className="form">
@@ -31,8 +58,11 @@ class ContentBox extends Component {
                 <span className="form-date__human">Wednesday</span>
               </label>
               <span className="form-datepicker">
-                {/* <input className="form--input__datepicker" type="date" /> */}
-                <button type="button" className="form-datepicker-button">
+                <button
+                  type="button"
+                  className="form-datepicker-button"
+                  onClick={this.handleCalendarOpen}
+                >
                   <svg
                     class="button-svg"
                     viewBox="0 0 48.000002 51.999999"
@@ -45,6 +75,12 @@ class ContentBox extends Component {
                     />
                   </svg>
                 </button>
+                <input
+                  className="form-datepicker-input"
+                  type="date"
+                  style={calendarIsOpen ? openStyle : closeStyle}
+                  min={`${todayDate[2]}-${todayDate[1]}-${todayDate[0]}`}
+                />
               </span>
             </div>
             <div className="form-group time-box">
