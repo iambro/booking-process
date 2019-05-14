@@ -40,70 +40,78 @@ class Header extends Component {
               />
             </a>
           </h1>
-          <ul className="header-menu">
+          <ul className="header-menu" onClick={this.handleHoverOff}>
             <li
               className="header-menu-item"
               onMouseEnter={this.handleHoverOn}
               onMouseLeave={this.handleHoverOff}
             >
-              <span className="header-menu-item-languages">EN</span>
+              <span className="header-menu-item-languages">
+                {this.props.language}
+              </span>
               <ul
                 className="header-menu-dropdown"
                 style={this.state.isOpen ? openStyle : closeStyle}
               >
                 <li className="header-menu-dropdown-item header-language-de">
-                  <a
+                  <button
                     className="header-language-button header-language-button-de"
-                    href="/"
+                    value="de"
+                    onClick={this.props.setLanguage}
                   >
                     <img className="header-language-flag" src={deflag} alt="" />
                     Deutsch (DE)
-                  </a>
+                  </button>
                 </li>
                 <li className="header-menu-dropdown-item header-language-en">
-                  <a
+                  <button
                     className="header-language-button header-language-button-en"
-                    href="/"
+                    value="en"
+                    onClick={this.props.setLanguage}
                   >
                     <img className="header-language-flag" src={enflag} alt="" />
                     English (EN)
-                  </a>
+                  </button>
                 </li>
                 <li className="header-menu-dropdown-item header-language-fr">
-                  <a
+                  <button
                     className="header-language-button header-language-button-fr"
-                    href="/"
+                    value="fr"
+                    onClick={this.props.setLanguage}
                   >
                     <img className="header-language-flag" src={frflag} alt="" />
                     Français (FR)
-                  </a>
+                  </button>
                 </li>
-                <li className="header-menu-dropdown-item header-language-de">
-                  <a
-                    className="header-language-button header-language-button-de"
-                    href="/"
+                <li className="header-menu-dropdown-item header-language-it">
+                  <button
+                    className="header-language-button header-language-button-it"
+                    value="it"
+                    onClick={this.props.setLanguage}
                   >
                     <img className="header-language-flag" src={itflag} alt="" />
                     Italiano (IT)
-                  </a>
+                  </button>
                 </li>
                 <li className="header-menu-dropdown-item header-language-es">
-                  <a
+                  <button
                     className="header-language-button header-language-button-es"
-                    href="/"
+                    value="es"
+                    onClick={this.props.setLanguage}
                   >
                     <img className="header-language-flag" src={esflag} alt="" />
                     Español (ES)
-                  </a>
+                  </button>
                 </li>
                 <li className="header-menu-dropdown-item header-language-pl">
-                  <a
+                  <button
                     className="header-language-button header-language-button-pl"
-                    href="/"
+                    value="pl"
+                    onClick={this.props.setLanguage}
                   >
                     <img className="header-language-flag" src={plflag} alt="" />
                     Polish (PL)
-                  </a>
+                  </button>
                 </li>
               </ul>
             </li>
