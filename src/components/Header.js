@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+import deflag from "./IMG/de.svg";
+import enflag from "./IMG/en.svg";
+import frflag from "./IMG/fr.svg";
+import itflag from "./IMG/it.svg";
+import esflag from "./IMG/es.svg";
+import plflag from "./IMG/pl.svg";
 
 const openStyle = {
   display: "block"
@@ -13,8 +19,12 @@ class Header extends Component {
     isOpen: false
   };
 
-  handleHover = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+  handleHoverOn = () => {
+    this.setState({ isOpen: true });
+  };
+
+  handleHoverOff = () => {
+    this.setState({ isOpen: false });
   };
 
   render() {
@@ -33,8 +43,8 @@ class Header extends Component {
           <ul className="header-menu">
             <li
               className="header-menu-item"
-              onMouseEnter={this.handleHover}
-              onMouseLeave={this.handleHover}
+              onMouseEnter={this.handleHoverOn}
+              onMouseLeave={this.handleHoverOff}
             >
               <span className="header-menu-item-languages">EN</span>
               <ul
@@ -46,6 +56,7 @@ class Header extends Component {
                     className="header-language-button header-language-button-de"
                     href="/"
                   >
+                    <img className="header-language-flag" src={deflag} alt="" />
                     Deutsch (DE)
                   </a>
                 </li>
@@ -54,6 +65,7 @@ class Header extends Component {
                     className="header-language-button header-language-button-en"
                     href="/"
                   >
+                    <img className="header-language-flag" src={enflag} alt="" />
                     English (EN)
                   </a>
                 </li>
@@ -62,6 +74,7 @@ class Header extends Component {
                     className="header-language-button header-language-button-fr"
                     href="/"
                   >
+                    <img className="header-language-flag" src={frflag} alt="" />
                     Français (FR)
                   </a>
                 </li>
@@ -70,6 +83,7 @@ class Header extends Component {
                     className="header-language-button header-language-button-de"
                     href="/"
                   >
+                    <img className="header-language-flag" src={itflag} alt="" />
                     Italiano (IT)
                   </a>
                 </li>
@@ -78,6 +92,7 @@ class Header extends Component {
                     className="header-language-button header-language-button-es"
                     href="/"
                   >
+                    <img className="header-language-flag" src={esflag} alt="" />
                     Español (ES)
                   </a>
                 </li>
@@ -86,6 +101,7 @@ class Header extends Component {
                     className="header-language-button header-language-button-pl"
                     href="/"
                   >
+                    <img className="header-language-flag" src={plflag} alt="" />
                     Polish (PL)
                   </a>
                 </li>

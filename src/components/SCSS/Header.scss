@@ -23,10 +23,15 @@
   }
 
   &-menu {
-    display: block;
+    display: inline-block;
     padding: 0 2px;
+    position: relative;
     &-dropdown {
       display: none;
+      position: absolute;
+      background-color: $gray-main;
+      min-width: 20rem;
+      z-index: 1;
     }
     span:after {
       background: none;
@@ -54,12 +59,22 @@
     }
   }
 
-  &-language-button {
-    text-decoration: none;
-    color: $orange;
-
-    &:hover {
-      color: $orange-light;
+  &-language {
+    &-flag {
+      height: 1.5rem;
+      border: 1px solid $white;
+      margin-right: 1.5rem;
     }
+    &-button {
+      text-decoration: none;
+      color: $orange;
+      &:hover {
+        color: $orange-light;
+        
+      }
+    }
+    
+
+    
   }
 }

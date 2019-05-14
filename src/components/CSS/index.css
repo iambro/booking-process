@@ -50,10 +50,15 @@ li {
       width: 12.3rem;
       height: 2.2rem; }
   .header-menu {
-    display: block;
-    padding: 0 2px; }
+    display: inline-block;
+    padding: 0 2px;
+    position: relative; }
     .header-menu-dropdown {
-      display: none; }
+      display: none;
+      position: absolute;
+      background-color: #3f454d;
+      min-width: 20rem;
+      z-index: 1; }
     .header-menu span:after {
       background: none;
       content: "\203a";
@@ -84,6 +89,10 @@ li {
       -webkit-transform: rotateZ(270deg);
       -ms-transform: rotate(270deg);
       transform: rotateZ(270deg); }
+  .header-language-flag {
+    height: 1.5rem;
+    border: 1px solid #ffffff;
+    margin-right: 1.5rem; }
   .header-language-button {
     text-decoration: none;
     color: #ff4800; }
