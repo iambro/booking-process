@@ -107,11 +107,17 @@
         border: none;
         border-left: 2px solid #a8a8a852;
         padding: 1.2rem;
+        cursor: pointer;
+      }
+      &-input {
+        display: none;
+        z-index: 1;
+        position: absolute;
       }
     }
 
     .time-box {
-      flex: 2
+      flex: 2;
     }
   }
 }

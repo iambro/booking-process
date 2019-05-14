@@ -243,7 +243,12 @@ li {
       background-color: #ffffff;
       border: none;
       border-left: 2px solid #a8a8a852;
-      padding: 1.2rem; }
+      padding: 1.2rem;
+      cursor: pointer; }
+    .content-box .form-datepicker-input {
+      display: none;
+      z-index: 1;
+      position: absolute; }
     .content-box .form .time-box {
       -webkit-box-flex: 2;
       -ms-flex: 2;
@@ -404,7 +409,12 @@ li {
       background-color: #ffffff;
       border: none;
       border-left: 2px solid #a8a8a852;
-      padding: 1.2rem; }
+      padding: 1.2rem;
+      cursor: pointer; }
+    .content-box .form-datepicker-input {
+      display: none;
+      z-index: 1;
+      position: absolute; }
     .content-box .form .time-box {
       -webkit-box-flex: 2;
       -ms-flex: 2;
