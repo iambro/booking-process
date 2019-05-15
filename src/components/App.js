@@ -17,7 +17,7 @@ class App extends Component {
   };
 
   getContent = () => {
-    fetch("https://api.myjson.com/bins/1bgej6")
+    fetch("https://api.myjson.com/bins/nex4i")
       .then(response => response.json())
       .then(data =>
         this.setState({

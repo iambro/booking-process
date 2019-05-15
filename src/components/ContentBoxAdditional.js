@@ -16,7 +16,8 @@ const ContentBoxAdditional = props => {
     isHidden,
     handleIsHidden,
     isChecked,
-    handleIsChecked
+    handleIsChecked,
+    handleInputs
   } = props;
   let passengersNumber, passengersText;
   let bagsNumber;
@@ -29,10 +30,10 @@ const ContentBoxAdditional = props => {
     passengersText = `${content.passengers}`;
   }
 
-  if (form.luggage + form.sportLuggage <= 2) {
+  if (Number(form.luggage) + Number(form.sportLuggage) <= 2) {
     bagsNumber = "1-2";
   } else {
-    bagsNumber = `1-${form.luggage + form.sportLuggage}`;
+    bagsNumber = `1-${Number(form.luggage) + Number(form.sportLuggage)}`;
   }
 
   return (
@@ -61,6 +62,7 @@ const ContentBoxAdditional = props => {
             className="form-group-input"
             name="passengers"
             defaultValue="2"
+            onChange={handleInputs}
           >
             <Options min={1} max={9} />
           </select>
@@ -70,7 +72,12 @@ const ContentBoxAdditional = props => {
           <label className="form-group-label">
             <i className="fas fa-briefcase" />
           </label>
-          <select className="form-group-input" name="luggages" defaultValue="2">
+          <select
+            className="form-group-input"
+            name="luggage"
+            defaultValue="2"
+            onChange={handleInputs}
+          >
             <Options min={0} max={9} />
           </select>
           <span className="form-arrow" />
@@ -81,8 +88,9 @@ const ContentBoxAdditional = props => {
           </label>
           <select
             className="form-group-input"
-            name="sportLuggages"
+            name="sportLuggage"
             defaultValue="0"
+            onChange={handleInputs}
           >
             <Options min={0} max={4} />
           </select>
@@ -92,7 +100,12 @@ const ContentBoxAdditional = props => {
           <label className="form-group-label">
             <i className="fas fa-dog" />
           </label>
-          <select className="form-group-input" name="animals" defaultValue="0">
+          <select
+            className="form-group-input"
+            name="animals"
+            defaultValue="0"
+            onChange={handleInputs}
+          >
             <Options min={0} max={5} />
           </select>
           <span className="form-arrow" />
@@ -105,6 +118,7 @@ const ContentBoxAdditional = props => {
             className="form-group-input"
             name="childrenSeats"
             defaultValue="0"
+            onChange={handleInputs}
           >
             <Options min={0} max={3} />
           </select>
@@ -132,13 +146,16 @@ const ContentBoxAdditional = props => {
             <select
               className="form-group-input"
               name="perHour"
-              defaultValue="0"
+              defaultValue="1"
+              onChange={handleInputs}
             >
               <Options min={1} max={25} add={"h"} />
             </select>
             <span className="form-arrow" />
           </div>
-          <p>{content.till} 13:18</p>
+          <p>
+            {content.till} {Number(form.pickup) + Number(form.perHour)}
+          </p>
         </div>
       </div>
     </div>

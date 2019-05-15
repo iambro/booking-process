@@ -37,7 +37,8 @@
         "luggage": "Luggage",
         "sportLuggage": "Sport luggage",
         "animals": "Animals",
-        "voucherCode": "Voucher Code"
+        "voucherCode": "Voucher Code",
+        "perHour": "Per-hour"
       },
       "alerts": []
     }

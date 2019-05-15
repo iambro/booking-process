@@ -120,7 +120,7 @@ class ContentBox extends Component {
               <input
                 className="form-input__time"
                 type="time"
-                name="pickupTime"
+                name="pickup"
                 onChange={this.props.handleInputs}
               />
             </div>
@@ -142,6 +142,7 @@ class ContentBox extends Component {
             isChecked={isChecked}
             handleIsHidden={this.handleIsHidden}
             handleIsChecked={this.handleIsChecked}
+            handleInputs={this.props.handleInputs}
           />
 
           <button className="form-button" onClick={this.handleButton}>
