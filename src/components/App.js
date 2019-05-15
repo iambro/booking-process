@@ -7,7 +7,7 @@ class App extends Component {
   state = {
     language: "en",
     steps: {},
-    form: {},
+    content: {},
     summary: {},
     alerts: {}
   };
@@ -17,7 +17,7 @@ class App extends Component {
   };
 
   getContent = () => {
-    fetch("https://api.myjson.com/bins/7xluq")
+    fetch("https://api.myjson.com/bins/14xooq")
       .then(response => response.json())
       .then(data =>
         this.setState({

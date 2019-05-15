@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {ContentBoxAdditional} from "./ContentBoxAdditional";
 
 const openStyle = { display: "block" };
 const closeStyle = { display: "none" };
@@ -19,8 +20,6 @@ class ContentBox extends Component {
     e.preventDefault();
   };
 
-  
-
   componentDidMount() {
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, "0");
@@ -35,12 +34,12 @@ class ContentBox extends Component {
 
   render() {
     const { todayDate, calendarIsOpen } = this.state;
-    
+    const { content, alerts, form } = this.props;
     return (
       <div className="content-box">
         <form className="form">
           <div className="form-group">
-            <label className="form-title">Pick up:</label>
+            <label className="form-title">{content.pickup}:</label>
             <input
               className="form-input"
               type="text"
@@ -50,7 +49,7 @@ class ContentBox extends Component {
             <span className="form-arrow" />
           </div>
           <div className="form-group">
-            <label className="form-title">Destination:</label>
+            <label className="form-title">{content.destination}:</label>
             <input
               className="form-input"
               type="text"
@@ -63,11 +62,11 @@ class ContentBox extends Component {
             <div className="form-group date-box">
               <label className="form-title date">
                 <span className="form-date__numeric">13.05</span>
-                <span className="form-date__human">Today</span>
+                <span className="form-date__human">{content.today}</span>
               </label>
               <label className="form-title date">
                 <span className="form-date__numeric">14.05</span>
-                <span className="form-date__human">Tomorrow</span>
+                <span className="form-date__human">{content.tomorrow}</span>
               </label>
               <label className="form-title date">
                 <span className="form-date__numeric">15.05</span>
@@ -102,7 +101,7 @@ class ContentBox extends Component {
               </span>
             </div>
             <div className="form-group time-box">
-              <label className="form-title">At:</label>
+              <label className="form-title">{content.at}:</label>
               <input
                 className="form-input__time"
                 type="time"
@@ -112,7 +111,7 @@ class ContentBox extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label className="form-title">Voucher code (optional):</label>
+            <label className="form-title">{content.voucher}:</label>
             <input
               className="form-input"
               type="text"
@@ -120,8 +119,13 @@ class ContentBox extends Component {
               onChange={this.props.handleInputs}
             />
           </div>
+          <div className="form-advanced">
+            <div className="form-advanced-description">
+              <ContentBoxAdditional content={content} form={form}/>
+            </div>
+          </div>
           <button className="form-button" onClick={this.handleButton}>
-            Start booking
+            {content.startBooking}
           </button>
         </form>
       </div>

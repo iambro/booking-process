@@ -12,11 +12,11 @@ class Content extends Component {
       pickup: "",
       distance: "",
       duration: "",
-      passengers: "",
-      childrenSeats: "",
-      luggage: "",
-      sportLuggage: "",
-      animals: "",
+      passengers: 2,
+      childrenSeats: 0,
+      luggage: 0,
+      sportLuggage: 0,
+      animals: 0,
       voucherCode: ""
     }
   };
@@ -30,26 +30,18 @@ class Content extends Component {
   };
 
   render() {
-    // const {
-    //   from,
-    //   to,
-    //   date,
-    //   pickupTime,
-    //   distance,
-    //   estimatedDuration,
-    //   passengers,
-    //   childrenSeats,
-    //   luggage,
-    //   sportLuggage,
-    //   animals,
-    //   voucherCode
-    // } = this.state.form;
     const { steps, content, summary, alerts } = this.props;
+    const {form} = this.state;
     return (
       <div className="content">
         <Steps steps={steps} />
-        <ContentBox handleInputs={this.handleInputs} content={content} />
-        <Summary form={this.state.form} summary={summary} />
+        <ContentBox
+          handleInputs={this.handleInputs}
+          content={content}
+          alerts={alerts}
+          form={form}
+        />
+        <Summary form={form} summary={summary}/>
       </div>
     );
   }
