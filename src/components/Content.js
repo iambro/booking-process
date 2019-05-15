@@ -31,6 +31,20 @@ class Content extends Component {
     this.setState(statusCopy);
   };
 
+  handleDateButton = e => {
+    e.preventDefault();
+    let value = e.target.value;
+
+    if(value === undefined){
+      value = e.target.parentNode.value;
+    }
+
+    let statusCopy = Object.assign({}, this.state);
+    statusCopy.form.date = value;
+    this.setState(statusCopy);
+
+  }
+
   componentDidMount() {
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, "0");
@@ -53,6 +67,7 @@ class Content extends Component {
         <Steps steps={steps} />
         <ContentBox
           handleInputs={this.handleInputs}
+          handleDateButton={this.handleDateButton}
           content={content}
           alerts={alerts}
           form={form}

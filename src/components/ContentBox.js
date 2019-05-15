@@ -37,7 +37,7 @@ class ContentBox extends Component {
 
   render() {
     const { calendarIsOpen, isHidden, isChecked } = this.state;
-    const { content, alerts, form, todayDate, language } = this.props;
+    const { content, alerts, form, todayDate, language , handleDateButton} = this.props;
     return (
       <div className="content-box">
         <form className="form">
@@ -63,7 +63,7 @@ class ContentBox extends Component {
           </div>
           <div className="form-date">
             <div className="form-group date-box">
-              <DateBox content={content} form={form} todayDate={todayDate} language={language}/>
+              <DateBox content={content} form={form} todayDate={todayDate} language={language} handleDateButton={handleDateButton}/>
               <span className="form-datepicker">
                 <button
                   type="button"

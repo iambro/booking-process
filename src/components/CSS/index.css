@@ -363,6 +363,7 @@ li {
     .content-box .form .date-box {
       margin: 0 0.2rem 0.2rem 0; }
     .content-box .form .date {
+      border: none;
       cursor: pointer;
       color: #1e2731;
       display: -webkit-box;
@@ -372,7 +373,9 @@ li {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 0; }
+      padding: 0;
+      font-family: inherit;
+      font-weight: 300; }
     .content-box .form-date {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -699,6 +702,7 @@ li {
     .content-box .form .date-box {
       margin: 0 0.2rem 0.2rem 0; }
     .content-box .form .date {
+      border: none;
       cursor: pointer;
       color: #1e2731;
       display: -webkit-box;
@@ -708,7 +712,9 @@ li {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding: 0; }
+      padding: 0;
+      font-family: inherit;
+      font-weight: 300; }
     .content-box .form-date {
       display: -webkit-box;
       display: -ms-flexbox;
