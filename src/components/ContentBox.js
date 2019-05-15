@@ -127,14 +127,14 @@ class ContentBox extends Component {
               onChange={this.props.handleInputs}
             />
           </div>
-          <div className="form-advanced">
-            <ContentBoxAdditional
-              content={content}
-              form={form}
-              isHidden={isHidden}
-              handleIsHidden={this.handleIsHidden}
-            />
-          </div>
+
+          <ContentBoxAdditional
+            content={content}
+            form={form}
+            isHidden={isHidden}
+            handleIsHidden={this.handleIsHidden}
+          />
+
           <button className="form-button" onClick={this.handleButton}>
             {content.startBooking}
           </button>

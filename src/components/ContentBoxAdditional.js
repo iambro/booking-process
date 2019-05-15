@@ -2,7 +2,7 @@ import React from "react";
 import { Options } from "./Options";
 
 const openStyle = {
-  display: "block"
+  display: "flex"
 };
 
 const closeStyle = {
@@ -29,7 +29,7 @@ const ContentBoxAdditional = props => {
   }
 
   return (
-    <>
+    <div className="form-advanced">
       <div className="form-advanced-description">
         <p className="form-advanced-decription-text">
           {`${
@@ -39,16 +39,16 @@ const ContentBoxAdditional = props => {
           }`}
         </p>
         <button className="form-advanced-button" onClick={handleIsHidden}>
-          {isHidden ? content.more : content.hide}
+          <span>{isHidden ? content.more : content.hide}</span>
         </button>
       </div>
-      <div className="form-advanced-options">
+      <div className="form-advanced-options" style={isHidden ? closeStyle : openStyle}>
         <div className="form-group">
-          <label>
+          <label className="form-group-label">
             <i className="far fa-user" />
           </label>
           <select
-            className="form-input-select"
+            className="form-group-input"
             name="passengers"
             defaultValue="2"
           >
@@ -57,11 +57,11 @@ const ContentBoxAdditional = props => {
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>
+          <label className="form-group-label">
             <i className="fas fa-briefcase" />
           </label>
           <select
-            className="form-input-select"
+            className="form-group-input"
             name="luggages"
             defaultValue="2"
           >
@@ -70,11 +70,11 @@ const ContentBoxAdditional = props => {
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>
+          <label className="form-group-label">
             <i className="fas fa-luggage-cart" />
           </label>
           <select
-            className="form-input-select"
+            className="form-group-input"
             name="sportLuggages"
             defaultValue="0"
           >
@@ -83,20 +83,20 @@ const ContentBoxAdditional = props => {
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>
+          <label className="form-group-label">
             <i className="fas fa-dog" />
           </label>
-          <select className="form-input-select" name="animals" defaultValue="0">
+          <select className="form-group-input" name="animals" defaultValue="0">
             <Options min={0} max={5} />
           </select>
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>
+          <label className="form-group-label">
             <i className="fas fa-baby" />
           </label>
           <select
-            className="form-input-select"
+            className="form-group-input"
             name="childrenSeats"
             defaultValue="0"
           >
@@ -105,7 +105,7 @@ const ContentBoxAdditional = props => {
           <span className="form-arrow" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
