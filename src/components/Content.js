@@ -19,7 +19,8 @@ class Content extends Component {
       animals: 0,
       perHour: 0,
       voucherCode: ""
-    }
+    },
+    todayDate: []
   };
 
   handleInputs = e => {
@@ -30,10 +31,22 @@ class Content extends Component {
     this.setState(statusCopy);
   };
 
+  componentDidMount() {
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, "0");
+    let mm = String(today.getMonth() + 1).padStart(2, "0");
+    let yyyy = today.getFullYear();
+    let hh = String(today.getHours()).padStart(2, "0");
+    let min = String(today.getMinutes()).padStart(2, "0");
+    let statusCopy = Object.assign({}, this.state);
+    statusCopy.form.pickup = `${hh}:${mm}`;
+    statusCopy.todayDate = [dd, mm, , yyyy, hh, min];
+    this.setState(statusCopy);
+  }
 
   render() {
     const { steps, content, summary, alerts } = this.props;
-    const {form} = this.state;
+    const { form, todayDate } = this.state;
     return (
       <div className="content">
         <Steps steps={steps} />
@@ -42,8 +55,9 @@ class Content extends Component {
           content={content}
           alerts={alerts}
           form={form}
+          todayDate={todayDate}
         />
-        <Summary form={form} summary={summary}/>
+        <Summary form={form} summary={summary} />
       </div>
     );
   }

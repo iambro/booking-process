@@ -7,7 +7,6 @@ const closeStyle = { display: "none" };
 class ContentBox extends Component {
   state = {
     calendarIsOpen: false,
-    todayDate: [],
     isHidden: true,
     isChecked: false
   };
@@ -35,21 +34,11 @@ class ContentBox extends Component {
     });
   };
 
-  componentDidMount() {
-    let today = new Date();
-    let dd = String(today.getDate()).padStart(2, "0");
-    let mm = String(today.getMonth() + 1).padStart(2, "0");
-    let yyyy = today.getFullYear();
-    let hh = String(today.getHours()).padStart(2, "0");
-    let min = String(today.getMinutes()).padStart(2, "0");
-    this.setState({
-      todayDate: [dd, mm, yyyy, hh, min]
-    });
-  }
+ 
 
   render() {
-    const { todayDate, calendarIsOpen, isHidden, isChecked } = this.state;
-    const { content, alerts, form } = this.props;
+    const {calendarIsOpen, isHidden, isChecked } = this.state;
+    const { content, alerts, form, todayDate } = this.props;
     return (
       <div className="content-box">
         <form className="form">
@@ -119,6 +108,7 @@ class ContentBox extends Component {
               <label className="form-title">{content.at}:</label>
               <input
                 className="form-input__time"
+                value={form.pickup}
                 type="time"
                 name="pickup"
                 onChange={this.props.handleInputs}
