@@ -41,12 +41,12 @@ class Content extends Component {
     let statusCopy = Object.assign({}, this.state);
     statusCopy.form.date = `${yyyy}-${mm}-${dd}`;
     statusCopy.form.pickup = `${hh}:${mm}`;
-    statusCopy.todayDate = [dd, mm, , yyyy, hh, min];
+    statusCopy.todayDate = [dd, mm, yyyy, hh, min];
     this.setState(statusCopy);
   }
 
   render() {
-    const { steps, content, summary, alerts } = this.props;
+    const { steps, content, summary, alerts, language } = this.props;
     const { form, todayDate } = this.state;
     return (
       <div className="content">
@@ -57,6 +57,7 @@ class Content extends Component {
           alerts={alerts}
           form={form}
           todayDate={todayDate}
+          language={language}
         />
         <Summary form={form} summary={summary} />
       </div>

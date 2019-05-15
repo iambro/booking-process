@@ -43,7 +43,7 @@ class App extends Component {
   }
 
   render() {
-    const { steps, content, summary, alerts } = this.state;
+    const { steps, content, summary, alerts, language } = this.state;
     return (
       <>
         <Header setLanguage={this.setLanguage} language={this.state.language} />
@@ -52,6 +52,7 @@ class App extends Component {
           content={content}
           summary={summary}
           alerts={alerts}
+          language={language}
         />
         <Footer />
       </>

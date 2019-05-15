@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ContentBoxAdditional } from "./ContentBoxAdditional";
+import { DateBox } from "./DateBox";
 
 const openStyle = { display: "block" };
 const closeStyle = { display: "none" };
@@ -34,11 +35,9 @@ class ContentBox extends Component {
     });
   };
 
- 
-
   render() {
-    const {calendarIsOpen, isHidden, isChecked } = this.state;
-    const { content, alerts, form, todayDate } = this.props;
+    const { calendarIsOpen, isHidden, isChecked } = this.state;
+    const { content, alerts, form, todayDate, language } = this.props;
     return (
       <div className="content-box">
         <form className="form">
@@ -64,18 +63,7 @@ class ContentBox extends Component {
           </div>
           <div className="form-date">
             <div className="form-group date-box">
-              <label className="form-title date">
-                <span className="form-date__numeric">13.05</span>
-                <span className="form-date__human">{content.today}</span>
-              </label>
-              <label className="form-title date">
-                <span className="form-date__numeric">14.05</span>
-                <span className="form-date__human">{content.tomorrow}</span>
-              </label>
-              <label className="form-title date">
-                <span className="form-date__numeric">15.05</span>
-                <span className="form-date__human">Wednesday</span>
-              </label>
+              <DateBox content={content} form={form} todayDate={todayDate} language={language}/>
               <span className="form-datepicker">
                 <button
                   type="button"
