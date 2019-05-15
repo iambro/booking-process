@@ -99,6 +99,7 @@ class ContentBox extends Component {
                   type="date"
                   style={calendarIsOpen ? openStyle : closeStyle}
                   min={`${todayDate[2]}-${todayDate[1]}-${todayDate[0]}`}
+                  defaultValue={form.date}
                   name="date"
                   onChange={this.props.handleInputs}
                 />

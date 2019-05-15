@@ -39,6 +39,7 @@ class Content extends Component {
     let hh = String(today.getHours()).padStart(2, "0");
     let min = String(today.getMinutes()).padStart(2, "0");
     let statusCopy = Object.assign({}, this.state);
+    statusCopy.form.date = `${yyyy}-${mm}-${dd}`;
     statusCopy.form.pickup = `${hh}:${mm}`;
     statusCopy.todayDate = [dd, mm, , yyyy, hh, min];
     this.setState(statusCopy);
