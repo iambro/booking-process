@@ -375,7 +375,8 @@ li {
       flex-direction: column;
       padding: 0;
       font-family: inherit;
-      font-weight: 300; }
+      font-weight: 300;
+      outline: none; }
     .content-box .form-date {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -714,7 +715,8 @@ li {
       flex-direction: column;
       padding: 0;
       font-family: inherit;
-      font-weight: 300; }
+      font-weight: 300;
+      outline: none; }
     .content-box .form-date {
       display: -webkit-box;
       display: -ms-flexbox;

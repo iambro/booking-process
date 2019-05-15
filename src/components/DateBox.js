@@ -1,5 +1,7 @@
 import React from "react";
 
+const activeStyle = { boxShadow: "2px 0px 0px 0px #ff4800 inset" };
+
 const DateBox = props => {
   const { form, content, todayDate, language, handleDateButton } = props;
 
@@ -161,6 +163,7 @@ const DateBox = props => {
       <button
         className="form-title date"
         value={valueOne}
+        style={valueOne === form.date ? activeStyle : null}
         onClick={handleDateButton}
       >
         <span className="form-date__numeric">{dateOne}</span>
@@ -169,6 +172,7 @@ const DateBox = props => {
       <button
         className="form-title date"
         value={valueTwo}
+        style={valueTwo === form.date ? activeStyle : null}
         onClick={handleDateButton}
       >
         <span className="form-date__numeric">{dateTwo}</span>
@@ -177,6 +181,7 @@ const DateBox = props => {
       <button
         className="form-title date"
         value={valueThree}
+        style={valueThree === form.date ? activeStyle : null}
         onClick={handleDateButton}
       >
         <span className="form-date__numeric">{dateThree}</span>
