@@ -58,6 +58,7 @@ li {
     .header-menu-dropdown {
       display: none;
       position: absolute;
+      padding: 2rem;
       background-color: #3f454d;
       min-width: 20rem;
       z-index: 1; }
@@ -98,7 +99,9 @@ li {
     pointer-events: none; }
   .header-language-button {
     text-decoration: none;
-    color: #ff4800; }
+    color: #ff4800;
+    background-color: #3f454d;
+    border: none; }
     .header-language-button:hover {
       color: #ff7e00; }
 

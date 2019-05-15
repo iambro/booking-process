@@ -29,6 +29,7 @@
     &-dropdown {
       display: none;
       position: absolute;
+      padding: 2rem;
       background-color: $gray-main;
       min-width: 20rem;
       z-index: 1;
@@ -69,13 +70,12 @@
     &-button {
       text-decoration: none;
       color: $orange;
+      background-color: $gray-main;
+      border: none;
+
       &:hover {
         color: $orange-light;
-        
       }
     }
-    
-
-    
   }
 }
