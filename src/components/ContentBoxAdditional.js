@@ -44,7 +44,9 @@ const ContentBoxAdditional = props => {
       </div>
       <div className="form-advanced-options">
         <div className="form-group">
-          <label>ICON</label>
+          <label>
+            <i className="far fa-user" />
+          </label>
           <select
             className="form-input-select"
             name="passengers"
@@ -55,7 +57,9 @@ const ContentBoxAdditional = props => {
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>ICON</label>
+          <label>
+            <i className="fas fa-briefcase" />
+          </label>
           <select
             className="form-input-select"
             name="luggages"
@@ -66,7 +70,9 @@ const ContentBoxAdditional = props => {
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>ICON</label>
+          <label>
+            <i className="fas fa-luggage-cart" />
+          </label>
           <select
             className="form-input-select"
             name="sportLuggages"
@@ -77,14 +83,18 @@ const ContentBoxAdditional = props => {
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>ICON</label>
+          <label>
+            <i className="fas fa-dog" />
+          </label>
           <select className="form-input-select" name="animals" defaultValue="0">
             <Options min={0} max={5} />
           </select>
           <span className="form-arrow" />
         </div>
         <div className="form-group">
-          <label>ICON</label>
+          <label>
+            <i className="fas fa-baby" />
+          </label>
           <select
             className="form-input-select"
             name="childrenSeats"
