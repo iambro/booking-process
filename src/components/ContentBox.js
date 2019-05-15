@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {ContentBoxAdditional} from "./ContentBoxAdditional";
+import { ContentBoxAdditional } from "./ContentBoxAdditional";
 
 const openStyle = { display: "block" };
 const closeStyle = { display: "none" };
@@ -7,7 +7,8 @@ const closeStyle = { display: "none" };
 class ContentBox extends Component {
   state = {
     calendarIsOpen: false,
-    todayDate: []
+    todayDate: [],
+    isHidden: true
   };
 
   handleCalendarOpen = () => {
@@ -18,6 +19,13 @@ class ContentBox extends Component {
 
   handleButton = e => {
     e.preventDefault();
+  };
+
+  handleIsHidden = e => {
+    e.preventDefault();
+    this.setState({
+      isHidden: !this.state.isHidden
+    });
   };
 
   componentDidMount() {
@@ -33,7 +41,7 @@ class ContentBox extends Component {
   }
 
   render() {
-    const { todayDate, calendarIsOpen } = this.state;
+    const { todayDate, calendarIsOpen, isHidden } = this.state;
     const { content, alerts, form } = this.props;
     return (
       <div className="content-box">
@@ -120,9 +128,12 @@ class ContentBox extends Component {
             />
           </div>
           <div className="form-advanced">
-            <div className="form-advanced-description">
-              <ContentBoxAdditional content={content} form={form}/>
-            </div>
+            <ContentBoxAdditional
+              content={content}
+              form={form}
+              isHidden={isHidden}
+              handleIsHidden={this.handleIsHidden}
+            />
           </div>
           <button className="form-button" onClick={this.handleButton}>
             {content.startBooking}
