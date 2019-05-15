@@ -35,9 +35,11 @@ li {
   font-size: 1.4rem;
   line-height: 3.6rem; }
   .header-content {
-    padding: 0 2rem;
+    padding: 0 4rem 0 1rem;
     margin: 0 auto;
-    max-width: 100rem;
+    max-width: 96rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -130,14 +132,25 @@ li {
 
 .summary {
   background-color: #1e2731;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 0.2rem 0.2rem 0.8rem 0.2rem;
+  width: 31.6rem; }
+  .summary-info {
+    font-size: 1.2rem;
+    line-height: 1.9rem; }
+  .summary-header {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    font-weight: 300;
+    padding: 0.8rem 1.4rem; }
 
 .form-advanced {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem; }
   .form-advanced-description {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -196,42 +209,85 @@ li {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-bottom: 1.5rem; }
-    .form-advanced-options .form-group {
-      width: 16.5rem;
-      height: 4.8rem;
+    flex-wrap: wrap; }
+  .form-advanced .form-group {
+    width: 16.5rem;
+    height: 4.8rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.2rem 0.2rem 0;
+    text-align: center; }
+    .form-advanced .form-group:nth-child(3) {
+      margin: 0 0 0.2rem 0; }
+    .form-advanced .form-group-label {
+      width: 4.8rem;
+      line-height: 4.8rem;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      margin: 0 0.2rem 0.2rem 0;
-      text-align: center; }
-      .form-advanced-options .form-group:nth-child(3) {
-        margin: 0 0 0.2rem 0; }
-      .form-advanced-options .form-group-label {
-        width: 4.8rem;
-        line-height: 4.8rem;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        background-color: #ffffff; }
-      .form-advanced-options .form-group-input {
-        -webkit-box-flex: 2;
-        -ms-flex: 2;
-        flex: 2;
-        border: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        outline: none;
-        cursor: pointer;
-        color: #4a575f;
-        font-size: 1.9rem;
-        line-height: 4.8rem;
-        padding-left: 3rem; }
+      background-color: #EBECED;
+      font-size: 2.5rem; }
+    .form-advanced .form-group-input {
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      cursor: pointer;
+      color: #4a575f;
+      font-size: 1.9rem;
+      font-family: inherit;
+      font-weight: 300;
+      line-height: 4.8rem;
+      padding-left: 3rem; }
+  .form-advanced-checkbox {
+    width: 100%;
+    height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 1.5rem; }
+    .form-advanced-checkbox-input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      height: 1.7rem;
+      width: 1.7rem;
+      outline: 2px solid #ff4800;
+      background-color: #ffffff;
+      margin-right: 1.5rem; }
+      .form-advanced-checkbox-input:checked {
+        background-image: url("../IMG/check-solid.svg");
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: center; }
+    .form-advanced-checkbox-checked {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .form-advanced-checkbox-checked .form-group-input {
+        padding-left: 2.5rem; }
+      .form-advanced-checkbox-checked p {
+        margin-left: 0.5rem; }
+    .form-advanced-checkbox p {
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      color: #ffffff;
+      margin-right: 1.5rem; }
 
 .content-box {
   font-size: 1.9rem;
   line-height: 2.6rem;
-  color: #a8a8a8; }
+  color: #a8a8a8;
+  padding: 0 0.8rem 2rem 0.8rem; }
   .content-box .form {
     width: 50rem; }
     .content-box .form-group {
@@ -247,6 +303,7 @@ li {
       box-sizing: border-box; }
     .content-box .form-input {
       font-size: 1.9rem;
+      font-family: inherit;
       height: 4.8rem;
       background-color: #ffffff;
       padding: 1.1rem 1.2rem 1.1rem 0.4rem;
@@ -364,7 +421,8 @@ li {
       cursor: pointer; }
 
 .content {
-  max-width: 100rem;
+  max-width: 90rem;
+  height: 60rem;
   margin: 0 auto;
   padding: 4rem;
   background-color: #3f454d;
@@ -372,7 +430,12 @@ li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .steps {
   margin: 0.8rem 0.8rem 2rem 0.8rem;
@@ -404,14 +467,25 @@ li {
 
 .summary {
   background-color: #1e2731;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 0.2rem 0.2rem 0.8rem 0.2rem;
+  width: 31.6rem; }
+  .summary-info {
+    font-size: 1.2rem;
+    line-height: 1.9rem; }
+  .summary-header {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    font-weight: 300;
+    padding: 0.8rem 1.4rem; }
 
 .form-advanced {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem; }
   .form-advanced-description {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -470,42 +544,85 @@ li {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-bottom: 1.5rem; }
-    .form-advanced-options .form-group {
-      width: 16.5rem;
-      height: 4.8rem;
+    flex-wrap: wrap; }
+  .form-advanced .form-group {
+    width: 16.5rem;
+    height: 4.8rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0.2rem 0.2rem 0;
+    text-align: center; }
+    .form-advanced .form-group:nth-child(3) {
+      margin: 0 0 0.2rem 0; }
+    .form-advanced .form-group-label {
+      width: 4.8rem;
+      line-height: 4.8rem;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      margin: 0 0.2rem 0.2rem 0;
-      text-align: center; }
-      .form-advanced-options .form-group:nth-child(3) {
-        margin: 0 0 0.2rem 0; }
-      .form-advanced-options .form-group-label {
-        width: 4.8rem;
-        line-height: 4.8rem;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        background-color: #ffffff; }
-      .form-advanced-options .form-group-input {
-        -webkit-box-flex: 2;
-        -ms-flex: 2;
-        flex: 2;
-        border: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        outline: none;
-        cursor: pointer;
-        color: #4a575f;
-        font-size: 1.9rem;
-        line-height: 4.8rem;
-        padding-left: 3rem; }
+      background-color: #EBECED;
+      font-size: 2.5rem; }
+    .form-advanced .form-group-input {
+      -webkit-box-flex: 2;
+      -ms-flex: 2;
+      flex: 2;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      cursor: pointer;
+      color: #4a575f;
+      font-size: 1.9rem;
+      font-family: inherit;
+      font-weight: 300;
+      line-height: 4.8rem;
+      padding-left: 3rem; }
+  .form-advanced-checkbox {
+    width: 100%;
+    height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 1.5rem; }
+    .form-advanced-checkbox-input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      height: 1.7rem;
+      width: 1.7rem;
+      outline: 2px solid #ff4800;
+      background-color: #ffffff;
+      margin-right: 1.5rem; }
+      .form-advanced-checkbox-input:checked {
+        background-image: url("../IMG/check-solid.svg");
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: center; }
+    .form-advanced-checkbox-checked {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .form-advanced-checkbox-checked .form-group-input {
+        padding-left: 2.5rem; }
+      .form-advanced-checkbox-checked p {
+        margin-left: 0.5rem; }
+    .form-advanced-checkbox p {
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      color: #ffffff;
+      margin-right: 1.5rem; }
 
 .content-box {
   font-size: 1.9rem;
   line-height: 2.6rem;
-  color: #a8a8a8; }
+  color: #a8a8a8;
+  padding: 0 0.8rem 2rem 0.8rem; }
   .content-box .form {
     width: 50rem; }
     .content-box .form-group {
@@ -521,6 +638,7 @@ li {
       box-sizing: border-box; }
     .content-box .form-input {
       font-size: 1.9rem;
+      font-family: inherit;
       height: 4.8rem;
       background-color: #ffffff;
       padding: 1.1rem 1.2rem 1.1rem 0.4rem;
@@ -638,7 +756,8 @@ li {
       cursor: pointer; }
 
 .content {
-  max-width: 100rem;
+  max-width: 90rem;
+  height: 60rem;
   margin: 0 auto;
   padding: 4rem;
   background-color: #3f454d;
@@ -646,11 +765,17 @@ li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 body {
   font-family: "Open Sans", sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 300;
-  background-color: #d2d6d9; }
+  background-color: #d2d6d9;
+  height: 100vh; }

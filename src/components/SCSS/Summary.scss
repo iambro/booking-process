@@ -1,4 +1,22 @@
 .summary {
   background-color: $gray-dark;
   color: $white;
+  padding: 0.2rem 0.2rem 0.8rem 0.2rem;
+  width: 31.6rem;
+
+  &-info{
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+
+  &-header{
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+    font-weight: 300;
+    padding: 0.8rem 1.4rem;
+  }
+
+  &-detail{
+
+  }
 }

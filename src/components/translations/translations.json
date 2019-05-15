@@ -19,7 +19,8 @@
         "bags": "bags",
         "hide": "hide options",
         "more": "more options",
-        "perHour": "Per-hour booking for",
+        "perHour": "Per-hour booking",
+        "perHourFor": "Per-hour booking for",
         "till": "till",
         "startBooking": "Start booking"
       },

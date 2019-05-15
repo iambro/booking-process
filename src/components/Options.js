@@ -7,7 +7,7 @@ const Options = props => {
   }
   const list = arr.map(x => (
     <option key={x} value={x}>
-      {x}
+      {x}{props.add}
     </option>
   ));
 

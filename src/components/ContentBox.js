@@ -8,7 +8,8 @@ class ContentBox extends Component {
   state = {
     calendarIsOpen: false,
     todayDate: [],
-    isHidden: true
+    isHidden: true,
+    isChecked: false
   };
 
   handleCalendarOpen = () => {
@@ -28,6 +29,12 @@ class ContentBox extends Component {
     });
   };
 
+  handleIsChecked = () => {
+    this.setState({
+      isChecked: !this.state.isChecked
+    });
+  };
+
   componentDidMount() {
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, "0");
@@ -41,7 +48,7 @@ class ContentBox extends Component {
   }
 
   render() {
-    const { todayDate, calendarIsOpen, isHidden } = this.state;
+    const { todayDate, calendarIsOpen, isHidden, isChecked } = this.state;
     const { content, alerts, form } = this.props;
     return (
       <div className="content-box">
@@ -132,7 +139,9 @@ class ContentBox extends Component {
             content={content}
             form={form}
             isHidden={isHidden}
+            isChecked={isChecked}
             handleIsHidden={this.handleIsHidden}
+            handleIsChecked={this.handleIsChecked}
           />
 
           <button className="form-button" onClick={this.handleButton}>

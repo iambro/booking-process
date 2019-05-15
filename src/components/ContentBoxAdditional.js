@@ -10,7 +10,14 @@ const closeStyle = {
 };
 
 const ContentBoxAdditional = props => {
-  const { content, form, isHidden, handleIsHidden } = props;
+  const {
+    content,
+    form,
+    isHidden,
+    handleIsHidden,
+    isChecked,
+    handleIsChecked
+  } = props;
   let passengersNumber, passengersText;
   let bagsNumber;
 
@@ -42,7 +49,10 @@ const ContentBoxAdditional = props => {
           <span>{isHidden ? content.more : content.hide}</span>
         </button>
       </div>
-      <div className="form-advanced-options" style={isHidden ? closeStyle : openStyle}>
+      <div
+        className="form-advanced-options"
+        style={isHidden ? closeStyle : openStyle}
+      >
         <div className="form-group">
           <label className="form-group-label">
             <i className="far fa-user" />
@@ -60,11 +70,7 @@ const ContentBoxAdditional = props => {
           <label className="form-group-label">
             <i className="fas fa-briefcase" />
           </label>
-          <select
-            className="form-group-input"
-            name="luggages"
-            defaultValue="2"
-          >
+          <select className="form-group-input" name="luggages" defaultValue="2">
             <Options min={0} max={9} />
           </select>
           <span className="form-arrow" />
@@ -103,6 +109,36 @@ const ContentBoxAdditional = props => {
             <Options min={0} max={3} />
           </select>
           <span className="form-arrow" />
+        </div>
+      </div>
+      <div
+        className="form-advanced-checkbox"
+        style={isHidden ? closeStyle : openStyle}
+      >
+        <input
+          type="checkbox"
+          className="form-advanced-checkbox-input"
+          onChange={handleIsChecked}
+        />
+        <p>{isChecked ? content.perHourFor : content.perHour}</p>
+        <div
+          className="form-advanced-checkbox-checked"
+          style={isChecked ? openStyle : closeStyle}
+        >
+          <div className="form-group">
+            <label className="form-group-label">
+              <i className="fas fa-stopwatch" />
+            </label>
+            <select
+              className="form-group-input"
+              name="perHour"
+              defaultValue="0"
+            >
+              <Options min={1} max={25} add={"h"} />
+            </select>
+            <span className="form-arrow" />
+          </div>
+          <p>{content.till} 13:18</p>
         </div>
       </div>
     </div>

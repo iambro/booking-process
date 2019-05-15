@@ -17,6 +17,7 @@ class Content extends Component {
       luggage: 0,
       sportLuggage: 0,
       animals: 0,
+      perHour: 0,
       voucherCode: ""
     }
   };
@@ -28,6 +29,7 @@ class Content extends Component {
     statusCopy.form[inputName] = inputValue;
     this.setState(statusCopy);
   };
+
 
   render() {
     const { steps, content, summary, alerts } = this.props;

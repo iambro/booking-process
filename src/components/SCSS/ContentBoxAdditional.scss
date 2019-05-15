@@ -3,6 +3,7 @@
 .form-advanced {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 1.5rem;
 
   &-description {
     width: 100%;
@@ -54,37 +55,82 @@
   &-options {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 1.5rem;
+  }
+  .form-group {
+    width: 16.5rem;
+    height: 4.8rem;
+    box-sizing: border-box;
+    margin: 0 0.2rem 0.2rem 0;
+    text-align: center;
 
-    .form-group {
-      width: 16.5rem;
-      height: 4.8rem;
+    &:nth-child(3) {
+      margin: 0 0 0.2rem 0;
+    }
+
+    &-label {
+      width: 4.8rem;
+      line-height: 4.8rem;
       box-sizing: border-box;
-      margin: 0 0.2rem 0.2rem 0;
-      text-align: center;
+      background-color: $gray-lighter;
+      font-size: 2.5rem;
+    }
 
-      &:nth-child(3){
-          margin: 0 0 0.2rem 0;
+    &-input {
+      flex: 2;
+      border: none;
+      appearance: none;
+      outline: none;
+      cursor: pointer;
+      color: $gray-light;
+      font-size: 1.9rem;
+      font-family: inherit;
+      font-weight: 300;
+      line-height: 4.8rem;
+      padding-left: 3rem;
+    }
+  }
+
+  &-checkbox {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+
+    &-input {
+      appearance: none;
+      height: 1.7rem;
+      width: 1.7rem;
+      outline: 2px solid $orange;
+      background-color: $white;
+      margin-right: 1.5rem;
+
+      &:checked {
+        background-image: url("../IMG/check-solid.svg");
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &-checked {
+      display: flex;
+      align-items: center;
+
+      .form-group-input{
+          padding-left: 2.5rem;
       }
 
-      &-label {
-        width: 4.8rem;
-        line-height: 4.8rem;
-        box-sizing: border-box;
-        background-color: $white;
+      p {
+        margin-left: 0.5rem;
       }
+    }
 
-      &-input{
-          flex: 2;
-          border: none;
-          appearance: none;
-          outline: none;
-          cursor: pointer;
-          color: $gray-light;
-          font-size: 1.9rem;
-          line-height: 4.8rem;
-          padding-left: 3rem;
-      }
+    p {
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      color: $white;
+      margin-right: 1.5rem;
     }
   }
 }

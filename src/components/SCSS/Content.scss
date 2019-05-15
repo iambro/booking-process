@@ -3,10 +3,13 @@
 @import "ContentBox";
 
 .content {
-  max-width: 100rem;
+  max-width: 90rem;
+  height: 60rem;
   margin: 0 auto;
   padding: 4rem;
   background-color: $gray-main;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
 }
