@@ -14,6 +14,7 @@ class App extends Component {
 
   setLanguage = e => {
     this.setState({ language: e.target.value });
+    this.getContent();
   };
 
   getContent = () => {
@@ -30,7 +31,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.getContent();
     // fetch("https://ipinfo.io/json")
     //   .then(response => response.json())
     //   .then(data => data.country.toLowerCase())
@@ -40,6 +40,7 @@ class App extends Component {
     //     }
     //   })
     //   .catch(err => console.log(err));
+    this.getContent();
   }
 
   render() {
