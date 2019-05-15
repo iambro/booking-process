@@ -49,7 +49,7 @@ class ContentBox extends Component {
               name="from"
               onChange={this.props.handleInputs}
             />
-            <span className="form-arrow" />
+            <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
           </div>
           <div className="form-group">
             <label className="form-title">{content.destination}:</label>
@@ -59,7 +59,7 @@ class ContentBox extends Component {
               name="to"
               onChange={this.props.handleInputs}
             />
-            <span className="form-arrow" />
+            <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
           </div>
           <div className="form-date">
             <div className="form-group date-box">

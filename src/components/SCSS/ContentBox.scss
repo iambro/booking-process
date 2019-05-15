@@ -44,32 +44,18 @@
       display: block;
       cursor: pointer;
       box-sizing: border-box;
-    }
+      text-align: center;
 
-    &-arrow:after {
-      color: $orange;
-      content: "\203a";
-      display: inline-block;
-      font-weight: 300;
-      margin: auto 0;
-      transform-origin: center center;
-      transition: all 0.35s ease-in-out;
-      direction: ltr;
-      transform: rotateZ(90deg);
-      font-size: 6rem;
-      height: 1.8rem;
-      line-height: 0.8rem;
-      width: 1.1rem;
-      right: 1rem;
-      bottom: 0;
-      top: 0;
-      position: relative;
-      right: -11px;
-      top: 7px;
-    }
+      &:hover > .fas {
+        transform: rotateZ(180deg);
+      }
 
-    &-arrow:hover:after {
-      transform: rotateZ(270deg);
+      i {
+        font-size: 2.5rem;
+        color: $orange;
+        padding-top: 6px;
+        transition: all 0.35s ease-in-out;
+      }
     }
 
     .date-box {

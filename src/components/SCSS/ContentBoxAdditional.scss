@@ -1,5 +1,3 @@
-@import "Options";
-
 .form-advanced {
   display: flex;
   flex-wrap: wrap;
@@ -50,11 +48,21 @@
       right: -10px;
       top: 2px;
     }
+
+    span:hover:after {
+      transform: rotateZ(270deg);
+    }
   }
 
   &-options {
     display: flex;
     flex-wrap: wrap;
+
+    .form-arrow {
+      .fas {
+        color: $gray-main;
+      }
+    }
   }
   .form-group {
     width: 16.5rem;
@@ -117,8 +125,8 @@
       display: flex;
       align-items: center;
 
-      .form-group-input{
-          padding-left: 2.5rem;
+      .form-group-input {
+        padding-left: 2.5rem;
       }
 
       p {

@@ -66,7 +66,7 @@ const ContentBoxAdditional = props => {
           >
             <Options min={1} max={9} />
           </select>
-          <span className="form-arrow" />
+          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -80,7 +80,7 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={9} />
           </select>
-          <span className="form-arrow" />
+          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -94,7 +94,7 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={4} />
           </select>
-          <span className="form-arrow" />
+          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -108,7 +108,7 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={5} />
           </select>
-          <span className="form-arrow" />
+          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -122,7 +122,7 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={3} />
           </select>
-          <span className="form-arrow" />
+          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
         </div>
       </div>
       <div
@@ -151,7 +151,7 @@ const ContentBoxAdditional = props => {
             >
               <Options min={1} max={25} add={"h"} />
             </select>
-            <span className="form-arrow" />
+            <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
           </div>
           <p>
             {content.till} {Number(form.pickup) + Number(form.perHour)}
