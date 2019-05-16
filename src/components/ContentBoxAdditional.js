@@ -22,7 +22,7 @@ const ContentBoxAdditional = props => {
   let passengersNumber, passengersText;
   let bagsNumber;
 
-  if (form.passengers === 1) {
+  if (Number(form.passengers) === 1) {
     passengersNumber = `${form.passengers}`;
     passengersText = `${content.passenger}`;
   } else {
@@ -59,6 +59,7 @@ const ContentBoxAdditional = props => {
             <i className="far fa-user" />
           </label>
           <select
+            id="passengers"
             className="form-group-input"
             name="passengers"
             defaultValue="2"
@@ -66,13 +67,14 @@ const ContentBoxAdditional = props => {
           >
             <Options min={1} max={9} />
           </select>
-          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+          <label for="passengers" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
             <i className="fas fa-briefcase" />
           </label>
           <select
+            id="luggage"
             className="form-group-input"
             name="luggage"
             defaultValue="2"
@@ -80,13 +82,14 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={9} />
           </select>
-          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+          <label for="luggage" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
             <i className="fas fa-luggage-cart" />
           </label>
           <select
+            id="sportLuggage"
             className="form-group-input"
             name="sportLuggage"
             defaultValue="0"
@@ -94,13 +97,14 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={4} />
           </select>
-          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+          <label for="sportLuggage" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
             <i className="fas fa-dog" />
           </label>
           <select
+            id="animals"
             className="form-group-input"
             name="animals"
             defaultValue="0"
@@ -108,13 +112,14 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={5} />
           </select>
-          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+          <label for="animals" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
             <i className="fas fa-baby" />
           </label>
           <select
+            id="childrenSeats"
             className="form-group-input"
             name="childrenSeats"
             defaultValue="0"
@@ -122,7 +127,7 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={3} />
           </select>
-          <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+          <label for="childrenSeats" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
         </div>
       </div>
       <div
