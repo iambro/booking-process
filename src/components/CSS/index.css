@@ -157,7 +157,7 @@ li {
       text-align: left;
       vertical-align: top; }
     .summary-details td {
-      ext-align: left;
+      text-align: left;
       vertical-align: top;
       padding: 0 0 0.2rem 1rem;
       max-width: 19.5rem;
@@ -502,7 +502,7 @@ li {
       text-align: left;
       vertical-align: top; }
     .summary-details td {
-      ext-align: left;
+      text-align: left;
       vertical-align: top;
       padding: 0 0 0.2rem 1rem;
       max-width: 19.5rem;
