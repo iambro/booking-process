@@ -18,10 +18,6 @@ class ContentBox extends Component {
     });
   };
 
-  handleButton = e => {
-    e.preventDefault();
-  };
-
   handleIsHidden = e => {
     e.preventDefault();
     this.setState({
@@ -37,7 +33,7 @@ class ContentBox extends Component {
 
   render() {
     const { calendarIsOpen, isHidden, isChecked } = this.state;
-    const { content, alerts, form, todayDate, language , handleDateButton} = this.props;
+    const { content, form, todayDate, language, handleDateButton } = this.props;
     return (
       <div className="content-box">
         <form className="form">
@@ -49,7 +45,9 @@ class ContentBox extends Component {
               name="from"
               onChange={this.props.handleInputs}
             />
-            <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+            <span className="form-arrow">
+              <i class="fas fa-chevron-down" />
+            </span>
           </div>
           <div className="form-group">
             <label className="form-title">{content.destination}:</label>
@@ -59,11 +57,19 @@ class ContentBox extends Component {
               name="to"
               onChange={this.props.handleInputs}
             />
-            <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+            <span className="form-arrow">
+              <i class="fas fa-chevron-down" />
+            </span>
           </div>
           <div className="form-date">
             <div className="form-group date-box">
-              <DateBox content={content} form={form} todayDate={todayDate} language={language} handleDateButton={handleDateButton}/>
+              <DateBox
+                content={content}
+                form={form}
+                todayDate={todayDate}
+                language={language}
+                handleDateButton={handleDateButton}
+              />
               <span className="form-datepicker">
                 <button
                   type="button"
@@ -124,7 +130,10 @@ class ContentBox extends Component {
             handleInputs={this.props.handleInputs}
           />
 
-          <button className="form-button" onClick={this.handleButton}>
+          <button
+            className="form-button"
+            onClick={this.props.handleBookingButton}
+          >
             {content.startBooking}
           </button>
         </form>

@@ -39,8 +39,212 @@
         "animals": "Animals",
         "voucherCode": "Voucher Code",
         "perHour": "Per-hour"
+      }
+    },
+    "pl": {
+      "steps": {
+        "stepOne": "Czas i adres",
+        "stepTwo": "Wybierz samochód",
+        "stepThree": "Dokonaj płątności"
       },
-      "alerts": []
+      "content": {
+        "pickup": "Odbiór",
+        "destination": "Cel",
+        "today": "Dzisiaj",
+        "tomorrow": "Jutro",
+        "at": "do",
+        "voucher": "Kod rabatowy",
+        "for": "Dla",
+        "passenger": "pasażera z",
+        "passengers": "pasażerów z",
+        "bags": "walizkami",
+        "hide": "ukryj",
+        "more": "Więcej opcji",
+        "perHour": "Rezerwacja przejazdu na godziny",
+        "perHourFor": "Rezerwacja przejazdu na godziny na",
+        "till": "do",
+        "startBooking": "Rozpocznij rezerwację"
+      },
+      "summary": {
+        "your": "Twoja rezerwacja",
+        "from": "Z",
+        "to": "Do",
+        "date": "Data",
+        "pickup": "Czas odbioru",
+        "distance": "Odległość",
+        "duration": "Przewidywany czas trwania",
+        "passengers": "Paseżerowie",
+        "childrenSeats": "Foteliki dla dzieci",
+        "luggage": "Bagaż",
+        "sportLuggage": "Bagaż sportowy",
+        "animals": "Zwierzęta",
+        "voucherCode": "Kod promocyjny",
+        "perHour": "Na czas"
+      }
+    },
+    "es": {
+      "steps": {
+        "stepOne": "Dónde y cuándo",
+        "stepTwo": "Elige un carro",
+        "stepThree": "Detalles y pago"
+      },
+      "content": {
+        "pickup": "Recoger",
+        "destination": "Destino",
+        "today": "Hoy",
+        "tomorrow": "Mañana",
+        "at": "A",
+        "voucher": "Código de cupón (opcional)",
+        "for": "Para",
+        "passenger": "Pasajero con",
+        "passengers": "Pasajeros con",
+        "bags": "Bolsas",
+        "hide": "Ocultar opcionse",
+        "more": "Más opciones",
+        "perHour": "Reserva por hora",
+        "perHourFor": "Reserva por hora para",
+        "till": "hasta",
+        "startBooking": "Código de cupón"
+      },
+      "summary": {
+        "your": "Su reserva",
+        "from": "Desde",
+        "to": "A",
+        "date": "Fecha",
+        "pickup": "Código de cupón",
+        "distance": "Distancia",
+        "duration": "Duration",
+        "passengers": "Pasajeros",
+        "childrenSeats": "Asientos para niños",
+        "luggage": "Equipaje",
+        "sportLuggage": "Equipaje deportivo",
+        "animals": "Animales",
+        "voucherCode": "Código de cupón",
+        "perHour": "Por hora"
+      }
+    },
+    "fr": {
+      "steps": {
+        "stepOne": "Où et quand",
+        "stepTwo": "Choisissez une voiture",
+        "stepThree": "Détails et paiement"
+      },
+      "content": {
+        "pickup": "Ramasser",
+        "destination": "Destination",
+        "today": "Aujourd'hui",
+        "tomorrow": "Demain",
+        "at": "À",
+        "voucher": "Code du voucher (facultatif)",
+        "for": "Pour",
+        "passenger": "Passager avec",
+        "passengers": "Passagers avec",
+        "bags": "sacs",
+        "hide": "masquer les options",
+        "more": "plus d'options",
+        "perHour": "Réservation à l'heure",
+        "perHourFor": "Réservation à l'heure pour",
+        "till": "jusqu'à",
+        "startBooking": "Démarrer la réservation"
+      },
+      "summary": {
+        "your": "Votre réservation",
+        "from": "De",
+        "to": "À",
+        "date": "Date",
+        "pickup": "Ramasser",
+        "distance": "Distance",
+        "duration": "Durée",
+        "passengers": "Passagers",
+        "childrenSeats": "Sièges enfants",
+        "luggage": "Bagage",
+        "sportLuggage": "Bagages de sport",
+        "animals": "Animaux",
+        "voucherCode": "Code du voucher",
+        "perHour": "Par heure"
+      }
+    },
+    "it": {
+      "steps": {
+        "stepOne": "Dove e quando",
+        "stepTwo": "Scegli una macchina",
+        "stepThree": "Dettagli e pagamento"
+      },
+      "content": {
+        "pickup": "Raccogliere",
+        "destination": "Destinazione",
+        "today": "Oggi",
+        "tomorrow": "Domani",
+        "at": "A",
+        "voucher": "Codice voucher (facoltativo)",
+        "for": "Per",
+        "passenger": "Passeggero con",
+        "passengers": "Passeggeros con",
+        "bags": "Borse",
+        "hide": "nascondi opzioni",
+        "more": "più opzioni",
+        "perHour": "Prenotazione per ora",
+        "perHourFor": "Prenotazione per ora all'ora",
+        "till": "fino",
+        "startBooking": "Inizia la prenotazione"
+      },
+      "summary": {
+        "your": "La tua prenotazione",
+        "from": "Da",
+        "to": "A",
+        "date": "Data",
+        "pickup": "Tempo di ritiro",
+        "distance": "Distanza",
+        "duration": "Durata",
+        "passengers": "Passeggeri",
+        "childrenSeats": "Seggiolini per bambini",
+        "luggage": "Bagaglio",
+        "sportLuggage": "Sporto bagaglio",
+        "animals": "Animali",
+        "voucherCode": "Codice voucher",
+        "perHour": "Per ora"
+      }
+    },
+    "de": {
+      "steps": {
+        "stepOne": "Wo und Wann",
+        "stepTwo": "Wähle ein Auto",
+        "stepThree": "Einzelheiten und Bezahlung"
+      },
+      "content": {
+        "pickup": "Abholung",
+        "destination": "Ziel",
+        "today": "Heute",
+        "tomorrow": "Morgen",
+        "at": "Beim",
+        "voucher": "Gutscheincode (optional)",
+        "for": "Für",
+        "passenger": "Passagier mit",
+        "passengers": "Passagiers mit",
+        "bags": "taschen",
+        "hide": "Optionen ausblenden",
+        "more": "mehr Optionen",
+        "perHour": "Pro Stunde buchen",
+        "perHourFor": "Pro Stunde buchen für",
+        "till": "bis",
+        "startBooking": "Buchung starten"
+      },
+      "summary": {
+        "your": "Ihre Buchung",
+        "from": "Von",
+        "to": "Zu",
+        "date": "Datum",
+        "pickup": "Abholzeit",
+        "distance": "Entfernung",
+        "duration": "Länge",
+        "passengers": "Passagiere",
+        "childrenSeats": "Kindersitze",
+        "luggage": "Gepäck",
+        "sportLuggage": "Sportgepäck",
+        "animals": "Tiere",
+        "voucherCode": "Gutscheincode",
+        "perHour": "Pro Stunde"
+      }
     }
   }
 }

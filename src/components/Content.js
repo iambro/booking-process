@@ -20,7 +20,8 @@ class Content extends Component {
       perHour: 0,
       voucherCode: ""
     },
-    todayDate: []
+    todayDate: [],
+    isSummaryVisible: false
   };
 
   handleInputs = e => {
@@ -45,6 +46,13 @@ class Content extends Component {
 
   }
 
+  handleBookingButton = e => {
+    e.preventDefault();
+    this.setState({
+      isSummaryVisible: true
+    })
+  };
+
   componentDidMount() {
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, "0");
@@ -60,8 +68,8 @@ class Content extends Component {
   }
 
   render() {
-    const { steps, content, summary, alerts, language } = this.props;
-    const { form, todayDate } = this.state;
+    const { steps, content, summary, language } = this.props;
+    const { form, todayDate, isSummaryVisible } = this.state;
     return (
       <div className="content">
         <Steps steps={steps} />
@@ -69,12 +77,12 @@ class Content extends Component {
           handleInputs={this.handleInputs}
           handleDateButton={this.handleDateButton}
           content={content}
-          alerts={alerts}
           form={form}
           todayDate={todayDate}
           language={language}
+          handleBookingButton={this.handleBookingButton}
         />
-        <Summary form={form} summary={summary} />
+        <Summary form={form} summary={summary} isSummaryVisible={isSummaryVisible}/>
       </div>
     );
   }

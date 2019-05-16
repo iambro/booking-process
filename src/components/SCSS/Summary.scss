@@ -4,19 +4,38 @@
   padding: 0.2rem 0.2rem 0.8rem 0.2rem;
   width: 31.6rem;
 
-  &-info{
+  &-info {
     font-size: 1.2rem;
     line-height: 1.9rem;
   }
 
-  &-header{
+  &-header {
     font-size: 2.8rem;
     line-height: 4.5rem;
     font-weight: 300;
     padding: 0.8rem 1.4rem;
   }
 
-  &-details{
-    
+  &-details {
+    margin: 0.8rem 1.4rem;
+
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    th {
+      color: $gray-labels;
+      font-weight: 300;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    td {
+      ext-align: left;
+      vertical-align: top;
+      padding: 0 0 0.2rem 1rem;
+      max-width: 19.5rem;
+      word-wrap: break-word;
+    }
   }
 }

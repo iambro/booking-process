@@ -146,6 +146,22 @@ li {
     line-height: 4.5rem;
     font-weight: 300;
     padding: 0.8rem 1.4rem; }
+  .summary-details {
+    margin: 0.8rem 1.4rem; }
+    .summary-details table {
+      width: 100%;
+      table-layout: fixed; }
+    .summary-details th {
+      color: #a8a8a8;
+      font-weight: 300;
+      text-align: left;
+      vertical-align: top; }
+    .summary-details td {
+      ext-align: left;
+      vertical-align: top;
+      padding: 0 0 0.2rem 1rem;
+      max-width: 19.5rem;
+      word-wrap: break-word; }
 
 .form-advanced {
   display: -webkit-box;
@@ -398,11 +414,12 @@ li {
     .content-box .form-datepicker-input {
       display: none;
       z-index: 1;
-      position: absolute; }
+      position: absolute;
+      font-family: "Open Sans", sans-serif; }
     .content-box .form .time-box {
-      -webkit-box-flex: 2;
-      -ms-flex: 2;
-      flex: 2; }
+      max-width: 15.3rem; }
+      .content-box .form .time-box input {
+        font-family: "Open Sans", sans-serif; }
     .content-box .form-button {
       color: #ffffff;
       background-color: #ff4800;
@@ -474,6 +491,22 @@ li {
     line-height: 4.5rem;
     font-weight: 300;
     padding: 0.8rem 1.4rem; }
+  .summary-details {
+    margin: 0.8rem 1.4rem; }
+    .summary-details table {
+      width: 100%;
+      table-layout: fixed; }
+    .summary-details th {
+      color: #a8a8a8;
+      font-weight: 300;
+      text-align: left;
+      vertical-align: top; }
+    .summary-details td {
+      ext-align: left;
+      vertical-align: top;
+      padding: 0 0 0.2rem 1rem;
+      max-width: 19.5rem;
+      word-wrap: break-word; }
 
 .form-advanced {
   display: -webkit-box;
@@ -726,11 +759,12 @@ li {
     .content-box .form-datepicker-input {
       display: none;
       z-index: 1;
-      position: absolute; }
+      position: absolute;
+      font-family: "Open Sans", sans-serif; }
     .content-box .form .time-box {
-      -webkit-box-flex: 2;
-      -ms-flex: 2;
-      flex: 2; }
+      max-width: 15.3rem; }
+      .content-box .form .time-box input {
+        font-family: "Open Sans", sans-serif; }
     .content-box .form-button {
       color: #ffffff;
       background-color: #ff4800;

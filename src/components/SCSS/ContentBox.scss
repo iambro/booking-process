@@ -108,10 +108,14 @@
         display: none;
         z-index: 1;
         position: absolute;
+        font-family: "Open Sans", sans-serif;
       }
     }
     .time-box {
-      flex: 2;
+      max-width: 15.3rem;
+      input {
+        font-family: "Open Sans", sans-serif;
+      }
     }
 
     &-button {
