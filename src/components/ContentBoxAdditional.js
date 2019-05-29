@@ -36,6 +36,16 @@ const ContentBoxAdditional = props => {
     bagsNumber = `1-${Number(form.luggage) + Number(form.sportLuggage)}`;
   }
 
+  const pickupTime = () => {
+    const time = form.pickup;
+    const h = form.perHour;
+    const hh = time.slice(0, 2);
+    const mm = time.slice(3, 5);
+    return Number(hh) + Number(h) <= 24
+      ? `${Number(hh) + Number(h)}:${mm}`
+      : `${Number(hh) + Number(h) - 24}:${mm}`;
+  };
+
   return (
     <div className="form-advanced">
       <div className="form-advanced-description">
@@ -67,7 +77,9 @@ const ContentBoxAdditional = props => {
           >
             <Options min={1} max={9} />
           </select>
-          <label for="passengers" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
+          <label for="passengers" className="form-arrow">
+            <i class="fas fa-chevron-down" />
+          </label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -82,7 +94,9 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={9} />
           </select>
-          <label for="luggage" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
+          <label for="luggage" className="form-arrow">
+            <i class="fas fa-chevron-down" />
+          </label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -97,7 +111,9 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={4} />
           </select>
-          <label for="sportLuggage" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
+          <label for="sportLuggage" className="form-arrow">
+            <i class="fas fa-chevron-down" />
+          </label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -112,7 +128,9 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={5} />
           </select>
-          <label for="animals" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
+          <label for="animals" className="form-arrow">
+            <i class="fas fa-chevron-down" />
+          </label>
         </div>
         <div className="form-group">
           <label className="form-group-label">
@@ -127,7 +145,9 @@ const ContentBoxAdditional = props => {
           >
             <Options min={0} max={3} />
           </select>
-          <label for="childrenSeats" className="form-arrow"><i class="fas fa-chevron-down"></i></label>
+          <label for="childrenSeats" className="form-arrow">
+            <i class="fas fa-chevron-down" />
+          </label>
         </div>
       </div>
       <div
@@ -156,10 +176,12 @@ const ContentBoxAdditional = props => {
             >
               <Options min={1} max={25} add={"h"} />
             </select>
-            <span className="form-arrow"><i class="fas fa-chevron-down"></i></span>
+            <span className="form-arrow">
+              <i class="fas fa-chevron-down" />
+            </span>
           </div>
           <p>
-            {content.till} {Number(form.pickup) + Number(form.perHour)}
+            {content.till} {pickupTime()}
           </p>
         </div>
       </div>
